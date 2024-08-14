@@ -18,8 +18,13 @@ export default function Home() {
             Flashcard Charades
           </Typography>
           <SignedOut>
-            <Button color="inherit">Login</Button>
-            <Button color="inherit">Signup</Button>
+            <Button color="inherit" href="/sign-in">
+            {""}
+            Login
+            </Button>
+            <Button color="inherit" href="/sign-up">
+            Sign up
+            </Button>
           </SignedOut>
           <SignedIn>
             <UserButton />
@@ -32,10 +37,10 @@ export default function Home() {
         my: 4,
       }}
       >
-        <Typography variant="h2">
+        <Typography variant="h2" gutterBottom>
           Welcome to Flashcard Charades
         </Typography>
-        <Typography variant ="h5">
+        <Typography variant ="h5" gutterBottom>
           Come let's play!
         </Typography>
         <Button variant="contained" color="primary" sx={{mt: 2}}>
@@ -43,12 +48,14 @@ export default function Home() {
         </Button>
       </Box>
       <Box sx={{my:6}}>
-        <Typography variant="h6" components="h2">
+        <Typography variant="h6" components="h2" gutterBottom>
           Features
         </Typography>
-        <Grid contained spacing={4}>
+        <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6">Easy Text Input</Typography>
+            <Typography variant="h6" gutterBottom>
+              Easy Text Input
+              </Typography>
             <Typography>
               {" "}
               Simple input your text and let us software do the rest. 
@@ -56,7 +63,9 @@ export default function Home() {
               </Typography>
           </Grid>
         <Grid item xs={12} md={4}>
-            <Typography variant="h6">Smart flashcards</Typography>
+            <Typography variant="h6" gutterBottom>
+              Smart flashcards
+              </Typography>
             <Typography>
               {" "}
               Our AI intelligently breaks down your text into
@@ -64,13 +73,70 @@ export default function Home() {
             </Typography>
           </Grid>
         <Grid item xs={12} md={4}>
-            <Typography variant="h6">Accessible Anywhere</Typography>
+            <Typography variant="h6" gutterBottom>
+              Accessible Anywhere
+              </Typography>
             <Typography>
              {" "}
              Access for flashcards from any device, at any time.
              Study on the go with ease. 
             </Typography>
           </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{my: 6, textAlign: 'center'}}>
+        <Typography variant="h4" gutterBottom>
+          Pricing
+          </Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={6}>
+            <Box 
+            sx={{
+              p: 3,
+              border: '1px solid',
+              borderColor: 'grey.300',
+              borderRadius: 2,
+            }}
+            >
+            <Typography variant="h5" gutterBottom>
+              Basic
+              </Typography>
+            <Typography variant="h6" gutterBottom>
+              $5 / month
+            </Typography>
+            <Typography>
+              {" "}
+              Access to basic flashcard features and limited storage.
+              </Typography>
+              <Button variant="contained" color="primary" sx={{mt: 2}}>
+                Choose basic
+              </Button>
+              </Box>
+          </Grid>
+          <Grid item xs={12} md={6}>
+          <Box 
+            sx={{
+              p: 3,
+              border: '1px solid',
+              borderColor: 'grey.300',
+              borderRadius: 2,
+            }}
+            >
+            <Typography variant="h5" gutterBottom>
+              Pro
+              </Typography>
+            <Typography variant="h6" gutterBottom>
+              $10 / month
+            </Typography>
+            <Typography>
+              {" "}
+              Unlimited flashcards and storage, with priority support.
+              </Typography>
+              <Button variant="contained" color="primary" sx={{mt: 2}}>
+                Choose Pro
+              </Button>
+              </Box>
+              </Grid>
         </Grid>
       </Box>
     </Container>
