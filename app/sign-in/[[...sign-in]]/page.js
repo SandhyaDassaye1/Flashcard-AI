@@ -28,24 +28,15 @@ export default function SignupPage() {
             </Toolbar>
         </AppBar>
 
-        <Box
-<<<<<<< HEAD
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        >
-            
+<Box
+    display="flex"
+    flexDirection="column"
+    alignItems="center"
+    justifyContent="center">
+    <Typography variant="h4">Sign In</Typography>
+    <SignIn />
+</Box>
 
-=======
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center">
->>>>>>> accf8ea631b64dc1455ed0bdbf1cafc530ac0676
-            <Typography variant="h4">Sign In</Typography>
-            <SignIn />
-        </Box>
     </Container>
     )
 }
