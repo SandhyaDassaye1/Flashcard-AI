@@ -29,6 +29,7 @@ export default function SignupPage() {
         </AppBar>
 
         <Box
+<<<<<<< HEAD
         display="flex"
         flexDirection="column"
         alignItems="center"
@@ -36,6 +37,12 @@ export default function SignupPage() {
         >
             
 
+=======
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center">
+>>>>>>> accf8ea631b64dc1455ed0bdbf1cafc530ac0676
             <Typography variant="h4">Sign Up</Typography>
             <SignUp />
         </Box>
