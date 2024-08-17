@@ -46,7 +46,7 @@ export default function Home() {
           <SignedOut>
             <Button color="inherit" href="/sign-in">
             {""}
-            Login
+            Log In
             </Button>
             <Button color="inherit" href="/sign-up">
             Sign up

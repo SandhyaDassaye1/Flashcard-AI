@@ -33,7 +33,7 @@ export default function SignupPage() {
     flexDirection="column"
     alignItems="center"
     justifyContent="center">
-    <Typography variant="h4">Sign In</Typography>
+    <Typography variant="h4">____________</Typography>
     <SignIn />
 </Box>
 

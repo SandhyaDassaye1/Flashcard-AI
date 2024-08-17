@@ -17,7 +17,7 @@ export default function SignupPage() {
                 </Typography>
                 <Button color="inherit">
                     <Link href="/sign-in" passHref>
-                      Login
+                      Sign In
                     </Link>
                 </Button>
                 <Button color="inherit">
@@ -33,7 +33,7 @@ export default function SignupPage() {
     flexDirection="column"
     alignItems="center"
     justifyContent="center">
-    <Typography variant="h4">Sign In</Typography>
+    <Typography variant="h4">____________</Typography>
     <SignIn />
 </Box>
     </Container>
